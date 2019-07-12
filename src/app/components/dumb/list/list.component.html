@@ -1,6 +1,8 @@
   <ng-container *ngFor="let element of elements"
-                [ngTemplateOutlet]="template"
+                [ngTemplateOutlet]="template || nothingHere"
                 [ngTemplateOutletContext]="{element: element}"
   >
   </ng-container>
-
+  <ng-template #nothingHere>
+    <h1>Sorry, there is nothing here!</h1>
+  </ng-template>
