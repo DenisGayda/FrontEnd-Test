@@ -3,5 +3,8 @@
 <app-list [template]="profileTests"></app-list>
 
 <ng-template #profileTests>
-  <p>{{testResult[n].name}}</p>
+  <p>{{testResult[n].name}}
+    <img src='./icons/true.png'*ngIf="testResult[n].result">
+    <img src='./icons/false.png'*ngIf="testResult[n].result">
+  </p>
 </ng-template>
