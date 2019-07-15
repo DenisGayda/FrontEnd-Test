@@ -1,11 +1,12 @@
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import {BrowserModule} from '@angular/platform-browser';
+import {NgModule} from '@angular/core';
 
-import { AppComponent } from './app.component';
-import { TextButtonComponent } from './components/dumb/text-button/text-button.component';
-import { InputComponent } from './components/dumb/input/input.component';
-import { CheckboxComponent } from './components/dumb/checkbox/checkbox.component';
+import {AppComponent} from './app.component';
+import {TextButtonComponent} from './components/dumb/text-button/text-button.component';
+import {InputComponent} from './components/dumb/input/input.component';
+import {CheckboxComponent} from './components/dumb/checkbox/checkbox.component';
 import {FormsModule} from '@angular/forms';
+import {ListComponent} from './components/dumb/list/list.component';
 import {HTTP_INTERCEPTORS, HttpClientModule} from '@angular/common/http';
 import {HttpMockRequestInterceptor} from './interceptors/HttpMockRequestInterceptor';
 
@@ -14,7 +15,8 @@ import {HttpMockRequestInterceptor} from './interceptors/HttpMockRequestIntercep
     AppComponent,
     TextButtonComponent,
     InputComponent,
-    CheckboxComponent
+    CheckboxComponent,
+    ListComponent
   ],
   imports: [
     BrowserModule,
@@ -30,4 +32,5 @@ import {HttpMockRequestInterceptor} from './interceptors/HttpMockRequestIntercep
   ],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+}
