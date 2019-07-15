@@ -1,16 +1,16 @@
 export interface TestInterface {
-  id: string;
-  title: string;
+  theme: string;
   questions: Question[];
   neededRightAnswers: number;
 }
 
 export interface Question {
-  text: string;
+  id: string;
+  question: string;
   answers: Answer[];
 }
 
 export interface Answer {
-  text: string;
-  isRight: boolean;
+  id: string;
+  answer: string;
 }
