@@ -1,0 +1,9 @@
+.list {
+  margin: 0 auto;
+  padding: 0;
+  width: 70%;
+  max-width: 500px;
+}
+h1 {
+  text-align: center;
+}
