@@ -6,13 +6,17 @@ import { TextButtonComponent } from './components/dumb/text-button/text-button.c
 import { InputComponent } from './components/dumb/input/input.component';
 import { CheckboxComponent } from './components/dumb/checkbox/checkbox.component';
 import {FormsModule} from '@angular/forms';
+import { TestsListComponent } from './components/smart/tests-list/tests-list.component';
+import { TestItemComponent } from './components/smart/test-item/test-item.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TextButtonComponent,
     InputComponent,
-    CheckboxComponent
+    CheckboxComponent,
+    TestsListComponent,
+    TestItemComponent
   ],
   imports: [
     BrowserModule,
