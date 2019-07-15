@@ -6,6 +6,8 @@ import { TextButtonComponent } from './components/dumb/text-button/text-button.c
 import { InputComponent } from './components/dumb/input/input.component';
 import { CheckboxComponent } from './components/dumb/checkbox/checkbox.component';
 import {FormsModule} from '@angular/forms';
+import {HTTP_INTERCEPTORS, HttpClientModule} from '@angular/common/http';
+import {HttpMockRequestInterceptor} from './interceptors/HttpMockRequestInterceptor';
 
 @NgModule({
   declarations: [
@@ -16,9 +18,16 @@ import {FormsModule} from '@angular/forms';
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [
+    {
+      provide: HTTP_INTERCEPTORS,
+      useClass: HttpMockRequestInterceptor,
+      multi: true
+    }
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
