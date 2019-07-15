@@ -4,7 +4,7 @@
 
 <ng-template #profileTests>
   <p>{{testResult[n].name}}
-    <img src='./icons/true.png'*ngIf="testResult[n].result">
-    <img src='./icons/false.png'*ngIf="testResult[n].result">
+    <img src='./icons/true.png'*ngIf="elements[n].result">
+    <img src='./icons/false.png'*ngIf="elements[n].result">
   </p>
 </ng-template>
