@@ -1,6 +1,6 @@
 <h2>Ваш никнэйм: {{user.nick}}</h2>
 <h2>Ваша почта: {{user.email}}</h2>
-<app-list [template]="profileTests"></app-list>
+<app-list [template]="profileTests" [elements]="testResult"></app-list>
 
 <ng-template #profileTests>
   <p>{{testResult[n].name}}
