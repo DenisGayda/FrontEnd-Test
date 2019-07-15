@@ -7,6 +7,7 @@ import { InputComponent } from './components/dumb/input/input.component';
 import { CheckboxComponent } from './components/dumb/checkbox/checkbox.component';
 import {FormsModule} from '@angular/forms';
 import { ListComponent } from './components/dumb/list/list.component';
+import { TestPassingPageComponent } from './components/smart/test-passing-page/test-passing-page.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { ListComponent } from './components/dumb/list/list.component';
     TextButtonComponent,
     InputComponent,
     CheckboxComponent,
-    ListComponent
+    ListComponent,
+    TestPassingPageComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,6 @@
+<h2>{{test.theme}}</h2>
+<app-list [template]="question" [elements]="test.questions"></app-list>
+
+<ng-template #question>
+  <h3>{{elements}}</h3>
+</ng-template>
