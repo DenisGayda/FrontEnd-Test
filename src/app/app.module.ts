@@ -12,6 +12,11 @@ import {HTTP_INTERCEPTORS, HttpClientModule} from '@angular/common/http';
 import {HttpMockRequestInterceptor} from './interceptors/HttpMockRequestInterceptor';
 import { LoginPageComponent } from './components/pages/login-page/login-page.component';
 import { RegistrationPageComponent } from './components/pages/registration-page/registration-page.component';
+import { UserPageComponent } from './components/pages/user-page/user-page.component';
+import { TestsPageComponent } from './components/pages/tests-page/tests-page.component';
+import { TestPassingPageComponent } from './components/pages/test-passing-page/test-passing-page.component';
+import { AdminPageComponent } from './components/pages/admin-page/admin-page.component';
+import { NotFoundPageComponent } from './components/pages/not-found-page/not-found-page.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +26,12 @@ import { RegistrationPageComponent } from './components/pages/registration-page/
     CheckboxComponent,
     ListComponent,
     LoginPageComponent,
-    RegistrationPageComponent
+    RegistrationPageComponent,
+    UserPageComponent,
+    TestsPageComponent,
+    TestPassingPageComponent,
+    AdminPageComponent,
+    NotFoundPageComponent
   ],
   imports: [
     BrowserModule,
