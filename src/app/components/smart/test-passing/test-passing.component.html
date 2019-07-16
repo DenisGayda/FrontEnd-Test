@@ -2,6 +2,6 @@
 <app-list [template]="question" [elements]="questions"></app-list>
 
 <ng-template #question>
-  <h3>{{questions[n].question}}</h3>
-  <app-test-answers [answers]="questions[n].answers"></app-test-answers>
+  <h3>{{elements[n].question}}</h3>
+  <app-test-answers [answers]="elements[n].answers"></app-test-answers>
 </ng-template>
