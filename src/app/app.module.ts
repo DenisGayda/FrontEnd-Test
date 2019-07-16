@@ -7,7 +7,8 @@ import { InputComponent } from './components/dumb/input/input.component';
 import { CheckboxComponent } from './components/dumb/checkbox/checkbox.component';
 import {FormsModule} from '@angular/forms';
 import { ListComponent } from './components/dumb/list/list.component';
-import { ProfilePageComponent } from './components/smart/profile-page/profile-page.component';
+import { ProfileComponent } from './components/smart/profile/profile-page.component';
+import { ProfilePageComponent } from './pages/profile-page/profile-page.component';
 
 @NgModule({
   declarations: [
@@ -15,9 +16,10 @@ import { ProfilePageComponent } from './components/smart/profile-page/profile-pa
     TextButtonComponent,
     InputComponent,
     CheckboxComponent,
-    ProfilePageComponent
+    ProfileComponent,
     CheckboxComponent,
-    ListComponent
+    ListComponent,
+    ProfilePageComponent
   ],
   imports: [
     BrowserModule,
