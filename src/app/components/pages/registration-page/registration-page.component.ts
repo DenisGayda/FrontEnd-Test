@@ -10,8 +10,6 @@ export class RegistrationPageComponent implements OnInit {
 
   registrationForm: FormGroup;
   
-  constructor() { }
-
   ngOnInit() {
     this.registrationForm = new FormGroup({
       login: new FormControl(''),
