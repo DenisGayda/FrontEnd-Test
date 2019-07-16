@@ -19,7 +19,7 @@ export class LoginPageComponent implements OnInit {
     });
   }
   submitUserData() {
+    // Метод будет вызывать файрбейз сервис, который в свою очередь будет вызывать метод login
     console.log(this.loginForm.value);
   }
-
 }
