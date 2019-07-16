@@ -1,5 +1,6 @@
 import {BrowserModule} from '@angular/platform-browser';
 import {NgModule} from '@angular/core';
+import {ReactiveFormsModule} from '@angular/forms';
 
 import {AppComponent} from './app.component';
 import {TextButtonComponent} from './components/dumb/text-button/text-button.component';
@@ -9,6 +10,7 @@ import {FormsModule} from '@angular/forms';
 import {ListComponent} from './components/dumb/list/list.component';
 import {HTTP_INTERCEPTORS, HttpClientModule} from '@angular/common/http';
 import {HttpMockRequestInterceptor} from './interceptors/HttpMockRequestInterceptor';
+import { LoginPageComponent } from './components/pages/login-page/login-page.component';
 
 @NgModule({
   declarations: [
@@ -16,12 +18,14 @@ import {HttpMockRequestInterceptor} from './interceptors/HttpMockRequestIntercep
     TextButtonComponent,
     InputComponent,
     CheckboxComponent,
-    ListComponent
+    ListComponent,
+    LoginPageComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule
   ],
   providers: [
     {

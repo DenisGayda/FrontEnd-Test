@@ -1,0 +1,14 @@
+<div>
+    <form [formGroup]="loginForm">
+        <div>
+            <label for="email">Email:</label>
+            <app-input formControlName="email" ngDefaultControl></app-input>
+        </div>
+        <div>
+            <label for="password">Password:</label>
+            <app-input formControlName="password" ngDefaultControl></app-input>
+        </div>
+        <app-text-button (click)="submitUserData()" [text]="'Login'"></app-text-button>
+    </form>
+    <app-text-button [text]="'Register'"></app-text-button>
+</div>
