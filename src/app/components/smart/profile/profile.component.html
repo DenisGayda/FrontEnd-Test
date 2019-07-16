@@ -2,9 +2,9 @@
 <h2>Ваша почта: {{user.email}}</h2>
 <app-list [template]="profileTests" [elements]="testResult"></app-list>
 
-<ng-template #profileTests>
-  <p>{{testResult[n].name}}
-    <img src='./icons/true.png'*ngIf="elements[n].result">
-    <img src='./icons/false.png'*ngIf="elements[n].result">
+<ng-template #profileTests let-element="element">
+  <p>{{element.name}}
+    <img src='./icons/true.png'*ngIf="element.result">
+    <img src='./icons/false.png'*ngIf="element.result">
   </p>
 </ng-template>
