@@ -10,8 +10,6 @@ export class LoginPageComponent implements OnInit {
 
   loginForm: FormGroup;
 
-  constructor() { }
-
   ngOnInit() {
     this.loginForm = new FormGroup({
       email: new FormControl(''),
