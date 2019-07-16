@@ -11,6 +11,7 @@ import {ListComponent} from './components/dumb/list/list.component';
 import {HTTP_INTERCEPTORS, HttpClientModule} from '@angular/common/http';
 import {HttpMockRequestInterceptor} from './interceptors/HttpMockRequestInterceptor';
 import { LoginPageComponent } from './components/pages/login-page/login-page.component';
+import { RegistrationPageComponent } from './components/pages/registration-page/registration-page.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { LoginPageComponent } from './components/pages/login-page/login-page.com
     InputComponent,
     CheckboxComponent,
     ListComponent,
-    LoginPageComponent
+    LoginPageComponent,
+    RegistrationPageComponent
   ],
   imports: [
     BrowserModule,

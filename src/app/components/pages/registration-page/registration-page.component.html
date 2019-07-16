@@ -1,0 +1,17 @@
+<div>
+    <form [formGroup]="registrationForm">
+        <div>
+            <label for="login">Enter your login:</label>
+            <app-input formControlName="login" ngDefaultControl></app-input>
+        </div>
+        <div>
+            <label for="email">Enter your email:</label>
+            <app-input formControlName="email" ngDefaultControl></app-input>
+        </div>
+        <div>
+            <label for="password">Enter your password:</label>
+            <app-input formControlName="password" ngDefaultControl></app-input>
+        </div>
+        <app-text-button (click)="submitUserData()" [text]="'Submit registration'"></app-text-button>
+    </form>
+</div>
