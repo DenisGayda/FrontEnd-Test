@@ -1,7 +1,1 @@
-<h1>Выберите тему тестирования</h1>
-<app-list [template]="template" [elements]="tests"></app-list>
 
-<ng-template #template let-item="element">
-  <app-test-picker [test]="item" (testBegin)="testBegin($event)">
-  </app-test-picker>
-</ng-template>
