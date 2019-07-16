@@ -1,5 +1,5 @@
 <app-list [template]="answer" [elements]="answers"></app-list>
 
 <ng-template #answer let-element="element">
-  <p>{{element.answer}}</p>
+  <p><app-checkbox></app-checkbox>{{element.answer}}</p>
 </ng-template>
