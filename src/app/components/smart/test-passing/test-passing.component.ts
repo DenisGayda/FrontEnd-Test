@@ -3,7 +3,7 @@ import {TestInterface} from '../../../../config/interfaces/test.interface';
 
 
 @Component({
-  selector: 'app-test-passing-page',
+  selector: 'app-test-passing',
   templateUrl: './test-passing.component.html',
   styleUrls: ['./test-passing.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush
