@@ -1,5 +1,6 @@
 import {ChangeDetectionStrategy, Component, Input, OnInit} from '@angular/core';
-import {TestInterface} from '../../../../config/interfaces/test.interface';
+import {Question, TestInterface} from '../../../../config/interfaces/test.interface';
+import {DataService} from "../../../services/data-service/data-service.service";
 
 
 @Component({
@@ -10,9 +11,12 @@ import {TestInterface} from '../../../../config/interfaces/test.interface';
 })
 export class TestPassingComponent implements OnInit {
   @Input() test: TestInterface;
-  questions: object[] = this.test.questions;
+  questions: Question;
 
-  constructor() {}
+  ngOnInit() {
+    this.dataService.getData('tests').subscribe(data => this.test = data);
+    this.questions = this.test.questions;
+  }
 
-  ngOnInit() {}
+  constructor(private dataService: DataService) {}
 }
