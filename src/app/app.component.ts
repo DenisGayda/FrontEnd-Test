@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'FrontEnd-Test';
+  tests = [{ title: 'js' }, { title: 'html' }, { title: 'css' }];
+
+  public testBegin(title: string) {
+    console.log(title);
+  }
 }

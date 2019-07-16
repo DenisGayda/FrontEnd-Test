@@ -5,9 +5,9 @@ import { AppComponent } from './app.component';
 import { TextButtonComponent } from './components/dumb/text-button/text-button.component';
 import { InputComponent } from './components/dumb/input/input.component';
 import { CheckboxComponent } from './components/dumb/checkbox/checkbox.component';
-import {FormsModule} from '@angular/forms';
-import { TestsListComponent } from './components/smart/tests-list/tests-list.component';
-import { TestItemComponent } from './components/smart/test-item/test-item.component';
+import { FormsModule } from '@angular/forms';
+import { TestPickerComponent } from './components/smart/test-picker/test-picker.component';
+import { ListComponent } from './components/dumb/list/list.component';
 
 @NgModule({
   declarations: [
@@ -15,14 +15,11 @@ import { TestItemComponent } from './components/smart/test-item/test-item.compon
     TextButtonComponent,
     InputComponent,
     CheckboxComponent,
-    TestsListComponent,
-    TestItemComponent
+    TestPickerComponent,
+    ListComponent
   ],
-  imports: [
-    BrowserModule,
-    FormsModule
-  ],
+  imports: [BrowserModule, FormsModule],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}
