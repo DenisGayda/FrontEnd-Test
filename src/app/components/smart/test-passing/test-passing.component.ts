@@ -1,13 +1,14 @@
 import {ChangeDetectionStrategy, Component, Input, OnInit} from '@angular/core';
-import {TestInterface} from "../../../../config/interfaces/test.interface";
+import {TestInterface} from '../../../../config/interfaces/test.interface';
+
 
 @Component({
   selector: 'app-test-passing-page',
-  templateUrl: './test-passing-page.component.html',
-  styleUrls: ['./test-passing-page.component.css'],
+  templateUrl: './test-passing.component.html',
+  styleUrls: ['./test-passing.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class TestPassingPageComponent implements OnInit {
+export class TestPassingComponent implements OnInit {
   @Input() test: TestInterface;
   questions: object[] = this.test.questions;
 

@@ -7,8 +7,9 @@ import { InputComponent } from './components/dumb/input/input.component';
 import { CheckboxComponent } from './components/dumb/checkbox/checkbox.component';
 import {FormsModule} from '@angular/forms';
 import { ListComponent } from './components/dumb/list/list.component';
-import { TestPassingPageComponent } from './components/smart/test-passing-page/test-passing-page.component';
+import { TestPassingComponent } from './components/smart/test-passing/test-passing.component';
 import { TestAnswersComponent } from './components/smart/test-answers/test-answers.component';
+import { TestPassingPageComponent } from './pages/test-passing-page/test-passing-page.component';
 
 @NgModule({
   declarations: [
@@ -17,8 +18,9 @@ import { TestAnswersComponent } from './components/smart/test-answers/test-answe
     InputComponent,
     CheckboxComponent,
     ListComponent,
-    TestPassingPageComponent,
-    TestAnswersComponent
+    TestPassingComponent,
+    TestAnswersComponent,
+    TestPassingPageComponent
   ],
   imports: [
     BrowserModule,
