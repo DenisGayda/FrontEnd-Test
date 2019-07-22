@@ -1,10 +1,11 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
 import { FormGroup, FormControl } from '@angular/forms';
 
 @Component({
   selector: 'app-registration-page',
   templateUrl: './registration-page.component.html',
-  styleUrls: ['./registration-page.component.scss']
+  styleUrls: ['./registration-page.component.scss'],
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class RegistrationPageComponent implements OnInit {
 
